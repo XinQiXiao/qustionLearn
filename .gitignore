@@ -1,0 +1,11 @@
+# node.js
+#
+node_modules/
+npm-debug.log
+
+# VSCode
+.vscode
+tsconfig.json
+jsconfig.json
+bundles/
+package-lock.json
