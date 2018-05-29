@@ -1,3 +1,6 @@
+/**
+ * 一道容易忽略的js面试题
+ */
 function Foo(){
   getName = function(){
     alert(1)
