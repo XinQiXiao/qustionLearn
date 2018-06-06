@@ -9,3 +9,5 @@ tsconfig.json
 jsconfig.json
 bundles/
 package-lock.json
+
+*._*
