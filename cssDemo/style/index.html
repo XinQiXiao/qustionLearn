@@ -3,8 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>css 样式</title>
+  <style type="text/css" media="screen">
+    a:link {color:#FF0000;}   /* 未被访问的链接 */
+    a:visited {color:#00FF00;}  /* 已被访问的链接 */
+    a:hover {color:#FF00FF;}  /* 鼠标指针移动到链接上 */
+    a:active {color:#0000FF;} /* 正在被点击的链接 */
+    ul li {list-style : url(example.gif) square inside}
+  </style>
 </head>
 <body>
-  
+  <a href="https://www.baidu.com">1</a><br>
+  <a href="https://www.baidu.com">1</a><br>
+  <a href="https://www.baidu.com">1</a><br>
+  <a href="https://www.baidu.com">1</a><br>
+  <hr>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+  </ul>
+  <hr>
 </body>
 </html>
