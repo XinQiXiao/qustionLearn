@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浮动布局</title>
+	<style>
+		.container {
+			width: 800px;
+			border: #999 solid 1px;
+		}
+		.innerFloat {
+			background: #fc5;
+			width: 100px;
+			height: 50px;
+			float: left;
+		}
+		/* .p1 {
+			float: clear;
+		} */
+		.container p {
+			float: left;
+		}
+		.clear {
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="innerFloat"></div>
+		<p class="p1">这是第一段测试浮动的内容</p>
+		<p class="p2">这是第二段测试浮动的内容</p>
+		<div class="clear"></div>
+	</div>
+</body>
+</html>

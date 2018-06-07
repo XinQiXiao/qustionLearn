@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>相对定位、绝对定位、固定定位</title>
+	<style type="text/css">
+		h2.pos_left {
+			position:relative;
+			left:-20px
+		}
+		h2.pos_right {
+			position:relative;
+			left:20px
+		}
+		h2.pos_abs {
+			position: absolute;
+			left: 100px;
+			top: 150px
+		}
+		p.one {
+			position:fixed;
+			left:5px;
+			top:5px;
+		}
+		p.two{
+			position:fixed;
+			top:30px;
+			right:5px;
+		}
+		div {
+			width: 800px;
+			height: 200px;
+			border: #999 solid 1px;
+		}
+		span {
+			border: #999 solid 1px;
+		}
+		#span2 {
+			position:relative;
+			left:-20px
+		}
+		#span3 {
+			position:relative;
+			left:20px
+		}
+	</style>
+</head>
+<body>
+		<h2>这是位于正常位置的标题</h2>
+		<h2 class="pos_left">这个标题相对于其正常位置向左移动</h2>
+		<h2 class="pos_right">这个标题相对于其正常位置向右移动</h2>
+		<div>
+			<span id="span1">span 1（正常）</span>
+			<span id="span2">span 2(reletive left)</span>
+			<span id="span1">span 1（正常）</span>
+			<span id="span1">span 1（正常）</span>
+			<span id="span3">span 2(reletive right)</span>
+			<span id="span1">span 4（正常）</span>
+		</div>
+		<hr>
+		<h2 class="pos_abs">这是带有绝对定位的标题</h2>
+		<p>通过绝对定位，元素可以放置到页面上的任何位置。下面的标题距离页面左侧 100px，距离页面顶部 150px。</p>
+		<div style="position: relative;">
+			<h2 class="pos_abs">这是带有绝对定位的标题</h2>
+			<p>通过绝对定位，元素可以放置到页面上的任何位置。下面的标题距离页面左侧 100px，距离页面顶部 150px。</p>
+		</div>
+		<div>
+			<p class="one">一些文本。</p>
+			<p class="two">更多的文本。</p>
+		</div>
+</body>
+</html>
