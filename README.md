@@ -23,3 +23,5 @@
     tag t0.3.0 XHTML && 表单
 
     tag t0.3.1 HTML5 && 图形 && 媒体
+
+    tag t0.4.0 Html API
