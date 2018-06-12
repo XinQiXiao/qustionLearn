@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>水平对齐</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		.center {
+			margin: auto;
+			width: 70%;
+			background: #b0e0e6;
+		}
+		.right {
+			position: absolute;
+			right: 0px;
+			width: 300px;
+			background-color: #b0e0e6;
+		}
+		.float-right {
+			float: right;
+			width: 300px;
+			background: #b0e0e6;
+		}
+	</style>
+</head>
+<body>
+	<div class="center">
+		<p>这是一个段落。这是一个段落。这是一个段落。这是一个段落。这是一个段落。</p>
+		<p>这是一个段落。这是一个段落。这是一个段落。这是一个段落。这是一个段落。</p>
+	</div>
+	<p><b>注释：</b>除非已经声明了 !DOCTYPE，否则使用 margin:auto 在 IE8 以及更早的版本中是无效的。</p>
+	<hr>
+
+	<!-- <div class="container">
+		<div class="right">
+			<p>这是一个段落。这是一个段落。这是一个段落。这是一个段落。这是一个段落。</p>
+			<p>
+				<b>注释：</b>
+				当使用 position 属性进行对齐时，请始终包含 !DOCTYPE 声明！如果省略，则会在 IE 浏览器中产生奇怪的结果。
+			</p>
+		</div>
+	</div>
+	<hr> -->
+
+	<div class="float-right">
+		<p>这是一个段落。这是一个段落。这是一个段落。这是一个段落。这是一个段落。</p>
+		<p>这是一个段落。这是一个段落。这是一个段落。这是一个段落。这是一个段落。</p>
+	</div>
+	<hr>
+</body>
+</html>

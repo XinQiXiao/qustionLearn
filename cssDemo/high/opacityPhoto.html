@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图像透明度</title>
+	<style>
+		/* div.img {
+			margin: 3px;
+			padding: auto;
+			border: 1px solid #bebebe;
+			height: 300px;
+			width: 300px;
+  		text-align: center;
+		} */
+		/* div.img img {
+			display: inline;
+			margin: 3px;
+			border: 1px solid #bebebe;
+			opacity:0.4;
+			filter:alpha(opacity=40);  针对 IE8 以及更早的版本
+		} */
+		/* div.img img:hover {
+			opacity: 1.0;
+			filter: alpha(opacity=100); 针对 IE8 以及更早的版本 
+		} */
+		div.background {
+			width: 400px;
+			height: 266px;
+			background: url('../../sources/image/css_photoes/tulip_ballade_s.jpg') repeat;
+			border: 1px solid black;
+		}
+		div.transbox {
+			width: 338px;
+			height: 204px;
+			margin:30px;
+			background-color: #ffffff;
+			border: 1px solid black;
+			/* for IE */
+			filter:alpha(opacity=60);
+			/* CSS3 standard */
+			opacity:0.6;
+		}
+		div.transbox p {
+			margin: 30px 40px;
+		}
+	</style>
+</head>
+<body>
+	<!-- <div class="img">
+		<img src="../../sources/image/css_photoes/tulip_ballade_s.jpg" 
+			alt="ballade" width="160" height="160"
+		>
+		<p>css opacity 使图像透明</p>
+		<p>hover 效果</p>
+	</div> -->
+	<div class="background">
+		<div class="transbox">
+			<p>
+				This is some text that is placed in the transparent box.
+				This is some text that is placed in the transparent box.
+				This is some text that is placed in the transparent box.
+				This is some text that is placed in the transparent box.
+				This is some text that is placed in the transparent box.
+			</p>
+		</div>
+	</div>
+</body>
+</html>
